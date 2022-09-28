@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "picture": "shorturl.at/fqT04",
+    "age": 38,
+    "name": "Lunges",
+    "time": 27
+  },
+  {
+    "id": 2,
+    "picture": "shorturl.at/mNQV2",
+    "age": 30,
+    "name": "Pushups",
+    "time": 32
+  },
+  {
+    "id": 3,
+    "picture": "shorturl.at/dFTV0",
+    "age": 36,
+    "name": "Squats",
+    "time": 25
+  },
+  {
+    "id": 4,
+    "picture": "shorturl.at/cjlX9",
+    "age": 39,
+    "name": "Dumbbell rows",
+    "time": 36
+  },
+  {
+    "id": 5,
+    "picture": "shorturl.at/cjpS6",
+    "age": 25,
+    "name": "Single-leg deadlifts",
+    "time": 31
+  },
+  {
+    "id": 6,
+    "picture": "shorturl.at/dhiu0",
+    "age": 34,
+    "name": "Burpees",
+    "time": 29
+  }
+]
