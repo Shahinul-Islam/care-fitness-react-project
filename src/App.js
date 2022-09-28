@@ -2,6 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import { useEffect, useState } from 'react';
 import ExerciseCard from './components/ExerciseCard/ExerciseCard';
+import Person from './components/Person/Person';
 
 function App() {
   
@@ -12,7 +13,7 @@ function App() {
     console.log(exerciseData)
   
   return (
-    <div className="App">
+    <div className="App p-4 bg-amber-200">
       <main className='grid grid-cols-3'>
         <div className='col-span-2'>
           <nav className='text-left p-4'>
@@ -27,7 +28,7 @@ function App() {
           </div>
         </div>
         <div >
-          thsi is for person
+          <Person></Person>
         </div>
       </main>
     </div>
