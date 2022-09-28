@@ -9,7 +9,7 @@ const ExerciseCard = ({data}) => {
             <h5 className='mt-2 text-left'>{name}</h5>
             <p className='text-left'>Age:{age}</p>
             <p className='text-left'>Time Required: {time}s</p>
-            <button className='mx-auto bg-slate-200 px-3 py-1 mt-3 rounded-sm'>Add to list</button>
+            <button className='mx-auto bg-blue-500 px-3 py-1 text-white mt-3 rounded-sm'>Add to list</button>
         </div>
     );
 };
