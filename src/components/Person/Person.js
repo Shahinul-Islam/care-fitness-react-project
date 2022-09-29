@@ -35,11 +35,11 @@ const Person = ({updatedTime}) => {
             <User></User>
             <p className='mt-3'>Add a break</p>
             <div className='bg-gray-300  mt-2 p-2 rounded-md flex justify-evenly'>
-                <span onClick={()=>getBreakTime(10)} className='rounded-full bg-slate-50 p-1'>10s</span>
-                <span onClick={()=>getBreakTime(20)} className='rounded-full bg-slate-50 p-1'>20s</span>
-                <span onClick={()=>getBreakTime(30)} className='rounded-full bg-slate-50 p-1'>30s</span>
-                <span onClick={()=>getBreakTime(40)} className='rounded-full bg-slate-50 p-1'>40s</span>
-                <span onClick={()=>getBreakTime(50)} className='rounded-full bg-slate-50 p-1'>50s</span>
+                <span onClick={()=>getBreakTime(10)} className='cursor-pointer rounded-full bg-slate-50 p-1'>10s</span>
+                <span onClick={()=>getBreakTime(20)} className='cursor-pointer rounded-full bg-slate-50 p-1'>20s</span>
+                <span onClick={()=>getBreakTime(30)} className='cursor-pointer rounded-full bg-slate-50 p-1'>30s</span>
+                <span onClick={()=>getBreakTime(40)} className='cursor-pointer rounded-full bg-slate-50 p-1'>40s</span>
+                <span onClick={()=>getBreakTime(50)} className='cursor-pointer rounded-full bg-slate-50 p-1'>50s</span>
             </div>
             <p className='my-2'>Exercise Details</p>
             
