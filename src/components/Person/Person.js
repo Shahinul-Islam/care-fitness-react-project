@@ -3,6 +3,9 @@ import myImage from '../../my-image.jpg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLocation } from '@fortawesome/free-solid-svg-icons'
 import User from '../User/User';
+import { ToastContainer, toast } from 'react-toastify';
+  import 'react-toastify/dist/ReactToastify.css';
+
 
 const Person = ({updatedTime}) => {
     
@@ -10,6 +13,10 @@ const Person = ({updatedTime}) => {
     const getBreakTime=(brTime)=>{
         setBreakTime(brTime)
     }
+    const notify = () => {
+        toast("Congratulations! You done a great job.")
+    }
+    ;
     return (
         <div className='w-3/4 mx-auto items-center'>
             <div className='flex ml-8'>
@@ -37,7 +44,18 @@ const Person = ({updatedTime}) => {
             <div className='bg-gray-300  mt-2 p-2 rounded-md flex justify-evenly'>
                 <span>Break time</span><span className=''>{breakTime}s</span>
             </div>
-            <button className='mt-3 bg-blue-500 px-3 text-white rounded-sm py-1'>Activity Completed</button>
+            <button onClick={notify} className='mt-3 bg-blue-500 px-3 text-white rounded-sm py-1'>Activity Completed</button>
+            <ToastContainer
+                position="top-center"
+                autoClose={5000}
+                hideProgressBar={false}
+                newestOnTop={false}
+                closeOnClick
+                rtl={false}
+                pauseOnFocusLoss
+                draggable
+                pauseOnHover
+            />
         </div>
     );
 };
