@@ -20,12 +20,12 @@ const Person = ({updatedTime}) => {
     }
     const breakTimeFromLs = getLsBreakTime()
     const notify = () => {
-        toast("Congratulations! You done a great job.")
+        toast("Congratulations! You done a great job.");
     }
     ;
     return (
-        <div className='w-3/4 mx-auto items-center'>
-            <div className='flex ml-8'>
+        <div className='mx-auto'>
+            <div className='flex justify-center'>
                 <img src={myImage} className="h-14 w-14 mr-2 rounded-full"></img>
                 <div>
                     <h4>Shahinul Islam</h4>
