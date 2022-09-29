@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLocation } from '@fortawesome/free-solid-svg-icons'
 import User from '../User/User';
 
-const Person = () => {
+const Person = ({updatedTime}) => {
     return (
         <div className='w-3/4 mx-auto items-center'>
             <div className='flex ml-8'>
@@ -25,12 +25,12 @@ const Person = () => {
             </div>
             <p className='my-2'>Exercise Details</p>
             
-            <div className='bg-gray-300  mt-2 p-2 rounded-md flex justify-evenly'>
-                <span>Exercise time</span><span className=''>100s</span>
+            <div className='bg-gray-300 mt-2 p-2 rounded-md flex justify-evenly'>
+                <span>Exercise time</span><span className=''>{updatedTime}s</span>
             </div>
             
             <div className='bg-gray-300  mt-2 p-2 rounded-md flex justify-evenly'>
-                <span>Break time</span><span className=''>100s</span>
+                <span>Break time</span><span className=''>00s</span>
             </div>
             <button className='mt-3 bg-blue-500 px-3 text-white rounded-sm py-1'>Activity Completed</button>
         </div>

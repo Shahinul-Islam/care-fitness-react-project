@@ -10,7 +10,14 @@ function App() {
     useEffect(()=>{
       fetch('exercise.json').then(res=>res.json()).then(data=>setExerciseData(data))
     },[])
-    console.log(exerciseData)
+    // console.log(exerciseData)
+    let [updatedTime, setTime] = useState(0)
+
+    const activitiesTime=(time)=>{
+      console.log(time)
+      updatedTime=updatedTime+time;
+      setTime(updatedTime)
+    }
   
   return (
     <div className="App p-4 bg-amber-200">
@@ -22,13 +29,13 @@ function App() {
           </nav>
           <div className='grid md:grid-cols-3 gap-3 my-3'>
             {
-              exerciseData.map(singleData=><ExerciseCard key={singleData.id} data={singleData}></ExerciseCard>)
+              exerciseData.map(singleData=><ExerciseCard key={singleData.id} data={singleData} activitiesTime={activitiesTime}></ExerciseCard>)
             }
             
           </div>
         </div>
         <div>
-          <Person></Person>
+          <Person updatedTime={updatedTime}></Person>
         </div>
       </main>
     </div>
