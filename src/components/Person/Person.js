@@ -11,8 +11,14 @@ const Person = ({updatedTime}) => {
     
     let [breakTime, setBreakTime] = useState(0)
     const getBreakTime=(brTime)=>{
+        localStorage.setItem("break-time",brTime)
         setBreakTime(brTime)
     }
+    const getLsBreakTime=()=>{
+        const lsBreakTime = localStorage.getItem('break-time')
+        return lsBreakTime
+    }
+    const breakTimeFromLs = getLsBreakTime()
     const notify = () => {
         toast("Congratulations! You done a great job.")
     }
@@ -42,7 +48,7 @@ const Person = ({updatedTime}) => {
             </div>
             
             <div className='bg-gray-300  mt-2 p-2 rounded-md flex justify-evenly'>
-                <span>Break time</span><span className=''>{breakTime}s</span>
+                <span>Break time</span><span className=''>{breakTimeFromLs}s</span>
             </div>
             <button onClick={notify} className='mt-3 bg-blue-500 px-3 text-white rounded-sm py-1'>Activity Completed</button>
             <ToastContainer
