@@ -14,10 +14,11 @@ function App() {
     let [updatedTime, setTime] = useState(0)
 
     const activitiesTime=(time)=>{
-      console.log(time)
       updatedTime=updatedTime+time;
       setTime(updatedTime)
     }
+
+    
   
   return (
     <div className="App p-4 bg-amber-200">
